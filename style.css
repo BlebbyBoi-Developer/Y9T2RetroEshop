@@ -48,6 +48,34 @@
 .nav-links a:hover {
   color: #ffd700; /* Turns gold on hover */
 }
-.center {
-  text-align: center;
+
+@import url('https://googleapis.com');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+.image-box {
+  position: relative; /* Keeps the text on the image */
+  text-align: center; 
+  color: white;
+}
+
+.image-box img {
+  width: 100%; /* Fits image to your screen */
+  height: auto;
+}
+
+.big-text a {
+  position: absolute;
+  top: 39%; /* Moves text down halfway */
+  left: 50%; /* Moves text right halfway */
+  transform: translate(-50%, -50%); /* Centers the text perfectly */
+  font-size: 5rem; /* Makes the text very big */
+  font-weight: bold;
+  color: white;
 }
