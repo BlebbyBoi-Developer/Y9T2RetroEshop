@@ -83,3 +83,73 @@ h1 {
     padding-bottom: 5px; /* Adds space between text and underline */
 
 }
+
+/* Dropdown wrapper */
+.nav-links li {
+  position: relative; /* add this to your existing rule */
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: auto;   /* ← remove the left anchor */
+  right: 0;     /* ← anchor to the right edge of "Shop" instead */
+  background-color: #222;
+  list-style: none;
+  padding: 12px;
+  margin: 0;
+  z-index: 100;
+  border-top: 2px solid #ffd700;
+  min-width: 700px;        /* wide enough for all 5 columns */
+}
+
+/* Show as a row on hover */
+.dropdown:hover .dropdown-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Each category is a flex column */
+.dropdown-menu > li {
+  flex: 1;
+  padding: 0 12px;
+  border-right: 0.5px solid #3a3a3a;
+}
+
+.dropdown-menu > li:last-child {
+  border-right: none;
+}
+
+/* Category headings */
+.dropdown-menu > li > span {
+  display: block;
+  padding: 6px 0 8px;
+  color: #ffd700;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-bottom: 0.5px solid #444;
+  margin-bottom: 4px;
+}
+
+/* Console links — vertical list */
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu ul li a {
+  display: block;
+  padding: 4px 0;
+  color: #ccc;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.dropdown-menu ul li a:hover {
+  color: #ffd700;
+  background: none;
+}
