@@ -1,3 +1,50 @@
 .darkened-image {
   filter: brightness(40%); 
 }
+/* Reset default browser spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the main navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem 2rem;
+  font-family: sans-serif;
+}
+
+/* Style the brand logo */
+.nav-logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Align links horizontally using Flexbox */
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+/* Add spacing between the list items */
+.nav-links li {
+  padding: 0 15px;
+}
+
+/* Style the clickable links */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+/* Add a hover effect for user interaction */
+.nav-links a:hover {
+  color: #ffd700; /* Turns gold on hover */
+}
