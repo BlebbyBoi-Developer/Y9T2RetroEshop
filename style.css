@@ -48,3 +48,6 @@
 .nav-links a:hover {
   color: #ffd700; /* Turns gold on hover */
 }
+.center {
+  text-align: center;
+}
